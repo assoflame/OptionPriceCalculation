@@ -1,5 +1,5 @@
-﻿using ScottPlot;
-using Statistics;
+﻿using OptionPriceCalculation.PriceCalculator;
+using ScottPlot;
 using System.Diagnostics;
 using System.Drawing;
 

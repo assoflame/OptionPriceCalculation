@@ -1,5 +1,6 @@
 ﻿using MathNet.Numerics.Distributions;
-namespace Statistics
+
+namespace OptionPriceCalculation.PriceCalculator
 {
     internal class MonteCarloMethod : OptionPriceCalculationMethod
     {

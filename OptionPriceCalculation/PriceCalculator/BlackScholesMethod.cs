@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Statistics
+namespace OptionPriceCalculation.PriceCalculator
 {
     internal class BlackScholesMethod : OptionPriceCalculationMethod
     {
@@ -19,9 +19,9 @@ namespace Statistics
 
             double d2 = d1 - optParams.Volatility * Math.Sqrt(optParams.Time);
 
-            return (optParams.BasePrice * distribution.CumulativeDistribution(d1))
-                - (optParams.StrikePrice * Math.Exp(-optParams.RiskFreeRate * optParams.Time)
-                    * distribution.CumulativeDistribution(d2));
+            return optParams.BasePrice * distribution.CumulativeDistribution(d1)
+                - optParams.StrikePrice * Math.Exp(-optParams.RiskFreeRate * optParams.Time)
+                    * distribution.CumulativeDistribution(d2);
         }
     }
 }

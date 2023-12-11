@@ -1,4 +1,4 @@
-﻿namespace Statistics
+﻿namespace OptionPriceCalculation.PriceCalculator
 {
     internal class OptionPriceCalculator
     {

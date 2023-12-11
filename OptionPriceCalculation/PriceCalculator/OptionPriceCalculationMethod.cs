@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Statistics
+namespace OptionPriceCalculation.PriceCalculator
 {
     internal abstract class OptionPriceCalculationMethod
     {
