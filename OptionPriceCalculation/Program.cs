@@ -38,7 +38,7 @@ namespace OptionPriceCalculation
 
             pricesPlot.XLabel("Iterations count");
             pricesPlot.YLabel("Option price");
-            pricesPlot.SaveFig("Price.png");
+            pricesPlot.SaveFig(@".\..\..\..\docs\Price.png");
 
 
 
@@ -51,12 +51,12 @@ namespace OptionPriceCalculation
 
             errorsPlot.XLabel("Iterations count");
             errorsPlot.YLabel("Error");
-            errorsPlot.SaveFig("Error.png");
+            errorsPlot.SaveFig(@".\..\..\..\docs\Error.png");
 
 
 
-            OpenImage("Error.png");
-            OpenImage("Price.png");
+            OpenImage(@".\..\..\..\docs\Error.png");
+            OpenImage(@".\..\..\..\docs\Price.png");
         }
 
         private static (double[] iterationCounts, double[] optionPrices) GetDataByMonteCarlo
