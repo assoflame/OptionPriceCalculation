@@ -38,6 +38,7 @@ namespace OptionPriceCalculation
 
             pricesPlot.XLabel("Iterations count");
             pricesPlot.YLabel("Option price");
+            pricesPlot.Legend();
             string pricePlotPath = @".\..\..\..\..\docs\Price.png";
             pricesPlot.SaveFig(pricePlotPath);
 
@@ -52,6 +53,7 @@ namespace OptionPriceCalculation
 
             errorsPlot.XLabel("Iterations count");
             errorsPlot.YLabel("Error");
+            errorsPlot.Legend();
             string errorsPlotPath = @".\..\..\..\..\docs\Error.png";
             errorsPlot.SaveFig(errorsPlotPath);
 
